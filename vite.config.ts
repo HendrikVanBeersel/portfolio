@@ -15,14 +15,15 @@ export default defineConfig({
         theme_color: '#024b30',
         icons: [
           {
-            src: './icons/pwa-icon-192.png',
+            src: '/icons/pwa-icon-192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: './icons/pwa-icon-512.png',
+            src: '/icons/pwa-icon-512.png',
             sizes: '512x512',
-            type: 'image/png'
+            type: 'image/png',
+            purpose: 'any maskable'
           }
         ]
       }
