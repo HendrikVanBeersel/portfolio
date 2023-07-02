@@ -13,18 +13,24 @@ watch(useRoute(), (to, from) => {
 </script>
 
 <template>
-  <header class="p-8">
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <div class="flex min-h-screen">
+    <header class="p-8 basis-1/2 flex flex-col justify-center">
+      <img
+        alt="Vue logo"
+        class="p-2 self-center"
+        src="@/assets/logo.svg"
+        width="300"
+        height="300"
+      />
 
-    <div class="p-4">
-      <h1>Hendrik Van Beersel</h1>
+      <h1 class="p-2 self-center text-5xl">Hendrik Van Beersel</h1>
 
-      <nav class="flex justify-center">
+      <nav class="flex justify-center text-xl">
         <RouterLink class="p-2" to="/">Home</RouterLink>
         <RouterLink class="p-2" to="/about">About</RouterLink>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <RouterView />
+    <RouterView class="basis-1/2 self-center" />
+  </div>
 </template>
