@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { RouterLink, RouterView, useRoute } from 'vue-router'
 
 const currentRoute = ref<string>('home')
@@ -25,9 +25,16 @@ watch(useRoute(), (to, from) => {
 
       <h1 class="p-2 self-center text-5xl">Hendrik Van Beersel</h1>
 
-      <nav class="flex justify-center text-xl">
-        <RouterLink class="p-2" to="/">Home</RouterLink>
-        <RouterLink class="p-2" to="/about">About</RouterLink>
+      <nav
+        class="flex justify-center py-2 text-xl divide-x-4 divide-secundary border-y-4 border-tertiary"
+      >
+        <RouterLink class="px-2" to="/">Home</RouterLink>
+        <RouterLink class="px-2" to="/skills">Skills</RouterLink>
+        <RouterLink class="px-2" to="/experience">Experience</RouterLink>
+        <RouterLink class="px-2" to="/projects">Projects</RouterLink>
+        <RouterLink class="px-2" to="/education">Education</RouterLink>
+        <RouterLink class="px-2" to="/aboutMe">About Me</RouterLink>
+        <RouterLink class="px-2" to="/contact">Contact</RouterLink>
       </nav>
     </header>
 
