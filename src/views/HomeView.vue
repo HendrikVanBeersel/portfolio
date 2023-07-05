@@ -9,7 +9,7 @@ import IconPerson from '@/components/icons/IconPerson.vue'
 
 <template>
   <main class="flex flex-col">
-    <HomeItem>
+    <HomeItem routerLinkName="skills">
       <template #icon>
         <IconStar class="fill-primary p-1" />
       </template>
@@ -21,7 +21,7 @@ import IconPerson from '@/components/icons/IconPerson.vue'
         devoloped a higher understanding behind the scrum process and effective communication.
       </template>
     </HomeItem>
-    <HomeItem>
+    <HomeItem routerLinkName="experience">
       <template #icon> <IconWorkExperience class="fill-primary p-3" /> </template>
       <template #heading>Experience</template>
 
@@ -31,7 +31,7 @@ import IconPerson from '@/components/icons/IconPerson.vue'
         <a href="https://but.digital/be-en/" class="underline decoration-white">BUT digital</a>
       </template>
     </HomeItem>
-    <HomeItem>
+    <HomeItem routerLinkName="projects">
       <template #icon>
         <IconProject class="stroke-primary fill-slate-950 p-2 stroke-2" />
       </template>
@@ -50,7 +50,7 @@ import IconPerson from '@/components/icons/IconPerson.vue'
       </template>
     </HomeItem>
 
-    <HomeItem>
+    <HomeItem routerLinkName="education">
       <template #icon
         ><IconEducation class="stroke-primary fill-slate-950 p-2 stroke-2"
       /></template>
@@ -62,7 +62,7 @@ import IconPerson from '@/components/icons/IconPerson.vue'
         </ul></template
       >
     </HomeItem>
-    <HomeItem>
+    <HomeItem routerLinkName="aboutMe">
       <template #icon>
         <IconPerson class="fill-primary p-2" />
       </template>
