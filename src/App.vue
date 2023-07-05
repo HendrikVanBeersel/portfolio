@@ -10,23 +10,41 @@ watch(useRoute(), (to, from) => {
     currentRoute.value = ''
   }
 })
+const mainFlexDirection = computed(() => {
+  if (currentRoute.value === 'home') {
+    return 'flex-row'
+  } else {
+    return 'flex-col'
+  }
+})
+const headerFlexDirection = computed(() => {
+  if (currentRoute.value === 'home') {
+    return 'flex-col'
+  } else {
+    return 'flex-row'
+  }
+})
 </script>
 
 <template>
-  <div class="flex min-h-screen">
-    <header class="p-8 basis-1/2 flex flex-col justify-center">
+  <div class="flex min-h-screen" :class="mainFlexDirection">
+    <header class="p-8 basis-1/2 flex justify-center" :class="headerFlexDirection">
       <img
         alt="Vue logo"
         class="p-2 self-center"
+        :class="headerFlexDirection === 'flex-col' ? 'h-80 w-80' : 'h-14 w-14'"
         src="@/assets/logo.svg"
-        width="300"
-        height="300"
       />
 
-      <h1 class="p-2 self-center text-5xl">Hendrik Van Beersel</h1>
+      <h1
+        class="p-2 self-center"
+        :class="headerFlexDirection === 'flex-col' ? 'text-5xl' : 'text-4xl'"
+      >
+        Hendrik Van Beersel
+      </h1>
 
       <nav
-        class="flex justify-center py-2 text-xl divide-x-4 divide-secundary border-y-4 border-tertiary"
+        class="flex flex-row justify-center py-2 text-xl divide-x-4 divide-secundary border-y-4 border-tertiary"
       >
         <RouterLink class="px-2" to="/">Home</RouterLink>
         <RouterLink class="px-2" to="/skills">Skills</RouterLink>
