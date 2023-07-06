@@ -3,7 +3,7 @@ import IconJavascript from '@/components/icons/programming/IconJavascript.vue'
 import IconTypescript from '@/components/icons/programming/IconTypescript.vue'
 import IconPython from '@/components/icons/programming/IconPython.vue'
 import IconJava from '@/components/icons/programming/IconJava.vue'
-import SkillItem from '@/components/SkillItem.vue'
+import SkillItem from '@/components/SmallCardItem.vue'
 import IconHtml5 from '@/components/icons/programming/IconHtml5.vue'
 import IconCSS from '@/components/icons/programming/IconCSS.vue'
 import IconDatabase from '@/components/icons/programming/IconDatabase.vue'
@@ -14,7 +14,7 @@ import IconNL from '@/components/icons/flags/IconNL.vue'
 import IconBE from '@/components/icons/flags/IconBE.vue'
 import IconUK from '@/components/icons/flags/IconUK.vue'
 import IconFR from '@/components/icons/flags/IconFR.vue'
-import ICONPT from '@/components/icons/flags/IconPT.vue'
+import IconPT from '@/components/icons/flags/IconPT.vue'
 import IconVue from '@/components/icons/programming/IconVue.vue'
 import IconReact from '@/components/icons/programming/IconReact.vue'
 </script>
@@ -123,7 +123,7 @@ import IconReact from '@/components/icons/programming/IconReact.vue'
           </SkillItem>
           <SkillItem>
             <template #icon>
-              <ICONPT />
+              <IconPT />
             </template>
             <template #name>Portuguese</template>
             <template #details>I'm learning Portuguese </template>

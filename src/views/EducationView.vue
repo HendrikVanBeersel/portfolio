@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import HomeItem from '@/components/HomeItem.vue'
+import EducationItem from '@/components/LineItem.vue'
 </script>
 <template>
   <main>
-    <HomeItem routerLinkName="">
+    <EducationItem routerLinkName="">
       <template #icon> <p class="p-2">2023</p> </template>
       <template #heading>Graduate Programing (Cum Laude)</template>
       <template #text class="">
@@ -12,8 +12,8 @@ import HomeItem from '@/components/HomeItem.vue'
           process. I also learned how to work in a team and how to communicate effectively.
         </p>
       </template>
-    </HomeItem>
-    <HomeItem routerLinkName="">
+    </EducationItem>
+    <EducationItem routerLinkName="">
       <template #icon> <p class="p-2">2023</p> </template>
       <template #heading>
         <p>
@@ -23,6 +23,6 @@ import HomeItem from '@/components/HomeItem.vue'
       </template>
 
       <template #text class=""> I took a scrum master course in june 2023. </template>
-    </HomeItem>
+    </EducationItem>
   </main>
 </template>

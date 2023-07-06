@@ -2,7 +2,7 @@
 import IconStar from '@/components/icons/IconStar.vue'
 import IconWorkExperience from '@/components/icons/IconWorkExperience.vue'
 import IconProject from '@/components/icons/IconProject.vue'
-import HomeItem from '../components/HomeItem.vue'
+import HomeItem from '../components/LineItem.vue'
 import IconEducation from '@/components/icons/IconEducation.vue'
 import IconPerson from '@/components/icons/IconPerson.vue'
 </script>
