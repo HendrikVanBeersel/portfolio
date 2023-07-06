@@ -1,0 +1,148 @@
+<script setup lang="ts">
+import IconJavascript from '@/components/icons/programming/IconJavascript.vue'
+import IconTypescript from '@/components/icons/programming/IconTypescript.vue'
+import IconPython from '@/components/icons/programming/IconPython.vue'
+import IconJava from '@/components/icons/programming/IconJava.vue'
+import SkillItem from '@/components/SkillItem.vue'
+import IconHtml5 from '@/components/icons/programming/IconHtml5.vue'
+import IconCSS from '@/components/icons/programming/IconCSS.vue'
+import IconDatabase from '@/components/icons/programming/IconDatabase.vue'
+import IconCodeTag from '@/components/icons/programming/IconCodeTag.vue'
+import IconDart from '@/components/icons/programming/IconDart.vue'
+import IconFlutter from '@/components/icons/programming/IconFlutter.vue'
+import IconNL from '@/components/icons/flags/IconNL.vue'
+import IconBE from '@/components/icons/flags/IconBE.vue'
+import IconUK from '@/components/icons/flags/IconUK.vue'
+import IconFR from '@/components/icons/flags/IconFR.vue'
+import ICONPT from '@/components/icons/flags/IconPT.vue'
+import IconVue from '@/components/icons/programming/IconVue.vue'
+import IconReact from '@/components/icons/programming/IconReact.vue'
+</script>
+<template>
+  <main class="w-7/12">
+    <ul class="space-y-8">
+      <li>
+        <h2 class="text-2xl text-left">Programming Languages</h2>
+        <p class="text-xs">Some program languages I am proficient at</p>
+        <ul class="py-5 flex flex-wrap">
+          <SkillItem>
+            <template #icon><IconJavascript class="fill-[#f7df1e]" /> </template>
+            <template #name>Tavascript</template>
+            <template #details>my most used scripting language</template>
+          </SkillItem>
+          <SkillItem>
+            <template #icon><IconTypescript class="fill-[#3178c6]" /> </template>
+            <template #name>Typescript</template>
+            <template #details>I'm currently switching to this scripting language</template>
+          </SkillItem>
+          <SkillItem>
+            <template #icon><IconPython /> </template>
+            <template #name>Python</template>
+            <template #details>My first program language.</template>
+          </SkillItem>
+          <SkillItem>
+            <template #icon><IconJava /> </template>
+            <template #name>Java</template>
+            <template #details> I use it mostly for the backend</template>
+          </SkillItem>
+          <SkillItem>
+            <template #icon><IconHtml5 class="fill-[#e44d26]" /> </template>
+            <template #name>HTML</template>
+            <template #details>I always use this for web develpment</template>
+          </SkillItem>
+          <SkillItem>
+            <template #icon><IconCSS class="fill-[#264de4]" /> </template>
+            <template #name>CSS</template>
+            <template #details>I always use this for web develpment</template>
+          </SkillItem>
+          <SkillItem>
+            <template #icon><IconDatabase class="fill-[#fff]" /> </template>
+            <template #name>SQL</template>
+            <template #details>I use both mySQL & PostgreSQL</template>
+          </SkillItem>
+          <SkillItem>
+            <template #icon><IconCodeTag class="fill-[#fff]" /> </template>
+            <template #name>Assembly</template>
+            <template #details>I have learned this language in school</template>
+          </SkillItem>
+          <SkillItem>
+            <template #icon><IconDart /> </template>
+            <template #name>Dart</template>
+            <template #details>I learned it for a school project</template>
+          </SkillItem>
+        </ul>
+      </li>
+      <li>
+        <h2 class="text-2xl text-left">frameworks</h2>
+        <p class="text-xs">frameworks I am proficient at</p>
+        <ul class="py-5 flex flex-wrap">
+          <SkillItem>
+            <template #icon><IconVue /> </template>
+            <template #name>Vue</template>
+            <template #details>My most used framework</template>
+          </SkillItem>
+          <SkillItem>
+            <template #icon><IconReact /> </template>
+            <template #name>React</template>
+            <template #details>I used this most during school</template>
+          </SkillItem>
+          <SkillItem>
+            <template #icon><IconFlutter class="fill-[#54c5f8]" /> </template>
+            <template #name>Flutter</template>
+            <template #details>This was with dart to create an app</template>
+          </SkillItem>
+        </ul>
+      </li>
+      <li>
+        <h2 class="text-2xl text-left">Languages</h2>
+        <ul class="py-5 flex flex-wrap">
+          <SkillItem>
+            <template #icon>
+              <IconNL />
+              <IconBE />
+            </template>
+            <template #name>Dutch</template>
+            <template #details>My native language</template>
+          </SkillItem>
+          <SkillItem>
+            <template #icon>
+              <IconUK />
+            </template>
+            <template #name>English</template>
+            <template #details
+              >I speak english almost on a daily basis. my proficiency is really high</template
+            >
+          </SkillItem>
+          <SkillItem>
+            <template #icon>
+              <IconFR />
+              <IconBE />
+            </template>
+            <template #name>French</template>
+            <template #details>my french is not perfect but I can get my message across </template>
+          </SkillItem>
+          <SkillItem>
+            <template #icon>
+              <ICONPT />
+            </template>
+            <template #name>Portuguese</template>
+            <template #details>I'm learning Portuguese </template>
+          </SkillItem>
+        </ul>
+      </li>
+
+      <li>
+        <h2 class="text-2xl">Varia</h2>
+        <ul>
+          <SkillItem class="w-64">
+            <template #icon>
+              <img src="@/assets/seal-csm.png" alt="seal of csm" />
+            </template>
+            <template #name>Certified Scrum Master</template>
+            <template #details>I have earned this certificat on 2023-06-27</template>
+          </SkillItem>
+        </ul>
+      </li>
+    </ul>
+  </main>
+</template>

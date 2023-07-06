@@ -5,7 +5,8 @@ import IconSourceBranch from '@/components/icons/IconSourceBranch.vue'
 import IconSwim from '@/components/icons/IconSwim.vue'
 </script>
 <template>
-  <div class="w-7/12 text-lg">
+  
+  <main class="w-7/12 text-lg">
     <ul class="space-y-4">
       <li>
         <p>Hello I am Hendrik and here is a bit about me as a person</p>
@@ -41,5 +42,5 @@ import IconSwim from '@/components/icons/IconSwim.vue'
         </p>
       </li>
     </ul>
-  </div>
+  </main>
 </template>
