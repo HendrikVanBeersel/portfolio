@@ -11,14 +11,22 @@ watch(useRoute(), (to, from) => {
   }
 })
 const mainFlexDirection = computed(() => {
-  if (currentRoute.value === 'home') {
+  if (
+    currentRoute.value === 'home' ||
+    currentRoute.value === 'experience' ||
+    currentRoute.value === 'education'
+  ) {
     return 'flex-row'
   } else {
     return 'flex-col'
   }
 })
 const headerFlexDirection = computed(() => {
-  if (currentRoute.value === 'home') {
+  if (
+    currentRoute.value === 'home' ||
+    currentRoute.value === 'experience' ||
+    currentRoute.value === 'education'
+  ) {
     return 'flex-col'
   } else {
     return 'flex-row'
