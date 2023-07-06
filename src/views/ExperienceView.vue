@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import HomeItem from '@/components/HomeItem.vue'
+import ExperienceItem from '@/components/LineItem.vue'
 </script>
 <template>
   <main>
-    <HomeItem routerLinkName="">
+    <ExperienceItem routerLinkName="">
       <template #icon> <p class="p-2 w-24">2022-2023</p> </template>
       <template #heading
         >Internship with <a href="https://but.digital/be-en/">BUT digital</a>
@@ -15,6 +15,6 @@ import HomeItem from '@/components/HomeItem.vue'
         </p>
         <p>References available upon request.</p>
       </template>
-    </HomeItem>
+    </ExperienceItem>
   </main>
 </template>
