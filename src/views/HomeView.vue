@@ -57,7 +57,7 @@ import IconPerson from '@/components/icons/IconPerson.vue'
       <template #heading>Education</template>
       <template #text
         ><ul>
-          <li>2023: Graduate Programing (Cum Laude)</li>
+          <li>2023: Graduate Programming (Cum Laude)</li>
           <li>2023: Certified Scrum Master</li>
         </ul></template
       >
