@@ -18,3 +18,17 @@ this is the code behind my portfolio.
 - [ ] fix email bug that sometimes happens
 - [ ] project connected with api github
 - [ ] translation button's
+
+##projects
+
+this one
+
+time sheet But
+
+backup system but
+
+plant manneger
+
+untappd app
+
+but showpad
