@@ -20,14 +20,14 @@ import IconReact from '@/components/icons/programming/IconReact.vue'
 import H2WithSubText from '@/components/H2WithSubText.vue'
 </script>
 <template>
-  <main class="xl:w-7/12">
+  <main class="lg:w-10/12 2xl:w-7/12">
     <ul class="space-y-8">
       <li>
         <H2WithSubText>
           <template #heading>Programming Languages</template>
           <template #subText>Some program languages I am proficient at</template>
         </H2WithSubText>
-        <ul class="xl:py-5 flex flex-wrap">
+        <ul class="flex flex-wrap lg:py-5">
           <SkillItem>
             <template #icon><IconJavascript class="fill-[#f7df1e]" /> </template>
             <template #name>Javascript</template>
@@ -80,7 +80,7 @@ import H2WithSubText from '@/components/H2WithSubText.vue'
           <template #heading>Frameworks</template>
           <template #subText>Frameworks I am proficient at</template>
         </H2WithSubText>
-        <ul class="py-5 flex flex-wrap">
+        <ul class="flex flex-wrap py-5">
           <SkillItem>
             <template #icon><IconVue /> </template>
             <template #name>Vue</template>
@@ -103,7 +103,7 @@ import H2WithSubText from '@/components/H2WithSubText.vue'
           <template #heading>Languages</template>
           <template #subText>Languages I'm familiar with</template>
         </H2WithSubText>
-        <ul class="py-5 flex flex-wrap">
+        <ul class="flex flex-wrap py-5">
           <SkillItem>
             <template #icon>
               <IconNL />
