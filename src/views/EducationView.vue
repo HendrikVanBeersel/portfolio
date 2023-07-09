@@ -3,7 +3,7 @@ import EducationItem from '@/components/LineItem.vue'
 </script>
 <template>
   <main>
-    <EducationItem routerLinkName="">
+    <EducationItem class="mt-10" routerLinkName="">
       <template #icon> <p class="p-2">2023</p> </template>
       <template #heading>Graduate Programing (Cum Laude)</template>
       <template #text class="">

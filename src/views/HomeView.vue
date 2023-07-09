@@ -9,9 +9,9 @@ import IconPerson from '@/components/icons/IconPerson.vue'
 
 <template>
   <main class="flex flex-col">
-    <HomeItem routerLinkName="skills">
+    <HomeItem class="mt-5" routerLinkName="skills">
       <template #icon>
-        <IconStar class="fill-primary p-1" />
+        <IconStar class="fill-primary xl:p-1" />
       </template>
       <template #heading>Skills</template>
 
@@ -22,7 +22,7 @@ import IconPerson from '@/components/icons/IconPerson.vue'
       </template>
     </HomeItem>
     <HomeItem routerLinkName="experience">
-      <template #icon> <IconWorkExperience class="fill-primary p-3" /> </template>
+      <template #icon> <IconWorkExperience class="fill-primary p-2 sm:p-3" /> </template>
       <template #heading>Experience</template>
 
       <template #text
@@ -33,7 +33,7 @@ import IconPerson from '@/components/icons/IconPerson.vue'
     </HomeItem>
     <HomeItem routerLinkName="projects">
       <template #icon>
-        <IconProject class="stroke-primary fill-slate-950 p-2 stroke-2" />
+        <IconProject class="stroke-primary fill-slate-950 p-1 sm:p-2 stroke-2" />
       </template>
       <template #heading>Projects</template>
       <template #text
@@ -52,7 +52,7 @@ import IconPerson from '@/components/icons/IconPerson.vue'
 
     <HomeItem routerLinkName="education">
       <template #icon
-        ><IconEducation class="stroke-primary fill-slate-950 p-2 stroke-2"
+        ><IconEducation class="stroke-primary fill-slate-950 sm:p-1 xl:p-2 stroke-2"
       /></template>
       <template #heading>Education</template>
       <template #text
@@ -64,7 +64,7 @@ import IconPerson from '@/components/icons/IconPerson.vue'
     </HomeItem>
     <HomeItem routerLinkName="aboutMe">
       <template #icon>
-        <IconPerson class="fill-primary p-2" />
+        <IconPerson class="fill-primary sm:p-1 xl:p-2" />
       </template>
       <template #heading>About Me</template>
       <template #text
