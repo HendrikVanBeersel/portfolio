@@ -17,17 +17,20 @@ import IconFR from '@/components/icons/flags/IconFR.vue'
 import IconPT from '@/components/icons/flags/IconPT.vue'
 import IconVue from '@/components/icons/programming/IconVue.vue'
 import IconReact from '@/components/icons/programming/IconReact.vue'
+import H2WithSubText from '@/components/H2WithSubText.vue'
 </script>
 <template>
-  <main class="w-7/12">
+  <main class="xl:w-7/12">
     <ul class="space-y-8">
       <li>
-        <h2 class="text-2xl text-left">Programming Languages</h2>
-        <p class="text-xs">Some program languages I am proficient at</p>
-        <ul class="py-5 flex flex-wrap">
+        <H2WithSubText>
+          <template #heading>Programming Languages</template>
+          <template #subText>Some program languages I am proficient at</template>
+        </H2WithSubText>
+        <ul class="xl:py-5 flex flex-wrap">
           <SkillItem>
             <template #icon><IconJavascript class="fill-[#f7df1e]" /> </template>
-            <template #name>Tavascript</template>
+            <template #name>Javascript</template>
             <template #details>my most used scripting language</template>
           </SkillItem>
           <SkillItem>
@@ -73,8 +76,10 @@ import IconReact from '@/components/icons/programming/IconReact.vue'
         </ul>
       </li>
       <li>
-        <h2 class="text-2xl text-left">frameworks</h2>
-        <p class="text-xs">frameworks I am proficient at</p>
+        <H2WithSubText>
+          <template #heading>Frameworks</template>
+          <template #subText>Frameworks I am proficient at</template>
+        </H2WithSubText>
         <ul class="py-5 flex flex-wrap">
           <SkillItem>
             <template #icon><IconVue /> </template>
@@ -94,7 +99,10 @@ import IconReact from '@/components/icons/programming/IconReact.vue'
         </ul>
       </li>
       <li>
-        <h2 class="text-2xl text-left">Languages</h2>
+        <H2WithSubText>
+          <template #heading>Languages</template>
+          <template #subText>Languages I'm familiar with</template>
+        </H2WithSubText>
         <ul class="py-5 flex flex-wrap">
           <SkillItem>
             <template #icon>
@@ -132,7 +140,9 @@ import IconReact from '@/components/icons/programming/IconReact.vue'
       </li>
 
       <li>
-        <h2 class="text-2xl">Varia</h2>
+        <H2WithSubText>
+          <template #heading>Varia</template>
+        </H2WithSubText>
         <ul>
           <SkillItem class="w-64">
             <template #icon>
