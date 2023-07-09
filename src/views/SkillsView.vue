@@ -18,6 +18,7 @@ import IconPT from '@/components/icons/flags/IconPT.vue'
 import IconVue from '@/components/icons/programming/IconVue.vue'
 import IconReact from '@/components/icons/programming/IconReact.vue'
 import H2WithSubText from '@/components/H2WithSubText.vue'
+import IconPHP from '@/components/icons/programming/IconPHP.vue'
 </script>
 <template>
   <main class="lg:w-10/12 2xl:w-7/12">
@@ -31,12 +32,12 @@ import H2WithSubText from '@/components/H2WithSubText.vue'
           <SkillItem>
             <template #icon><IconJavascript class="fill-[#f7df1e]" /> </template>
             <template #name>Javascript</template>
-            <template #details>my most used scripting language</template>
+            <template #details>My most used scripting language.</template>
           </SkillItem>
           <SkillItem>
             <template #icon><IconTypescript class="fill-[#3178c6]" /> </template>
             <template #name>Typescript</template>
-            <template #details>I'm currently switching to this scripting language</template>
+            <template #details>I'm currently switching to this scripting language.</template>
           </SkillItem>
           <SkillItem>
             <template #icon><IconPython /> </template>
@@ -46,62 +47,67 @@ import H2WithSubText from '@/components/H2WithSubText.vue'
           <SkillItem>
             <template #icon><IconJava /> </template>
             <template #name>Java</template>
-            <template #details> I use it mostly for the backend</template>
+            <template #details> I use it mostly for the backend.</template>
           </SkillItem>
           <SkillItem>
             <template #icon><IconHtml5 class="fill-[#e44d26]" /> </template>
             <template #name>HTML</template>
-            <template #details>I always use this for web develpment</template>
+            <template #details>I always use this for web development.</template>
           </SkillItem>
           <SkillItem>
             <template #icon><IconCSS class="fill-[#264de4]" /> </template>
             <template #name>CSS</template>
-            <template #details>I always use this for web develpment</template>
+            <template #details>I always use this for web development.</template>
           </SkillItem>
           <SkillItem>
             <template #icon><IconDatabase class="fill-[#fff]" /> </template>
             <template #name>SQL</template>
-            <template #details>I use both mySQL & PostgreSQL</template>
+            <template #details>I use both mySQL & PostgreSQL.</template>
           </SkillItem>
           <SkillItem>
             <template #icon><IconCodeTag class="fill-[#fff]" /> </template>
             <template #name>Assembly</template>
-            <template #details>I have learned this language in school</template>
+            <template #details>I have learned this language in school.</template>
           </SkillItem>
           <SkillItem>
             <template #icon><IconDart /> </template>
             <template #name>Dart</template>
-            <template #details>I learned it for a school project</template>
+            <template #details>I learned it for a school project.</template>
+          </SkillItem>
+          <SkillItem>
+            <template #icon><IconPHP /> </template>
+            <template #name>PHP</template>
+            <template #details>I Have a basic understanding of PHP.</template>
           </SkillItem>
         </ul>
       </li>
       <li>
         <H2WithSubText>
           <template #heading>Frameworks</template>
-          <template #subText>Frameworks I am proficient at</template>
+          <template #subText>Frameworks I am proficient at.</template>
         </H2WithSubText>
         <ul class="flex flex-wrap py-5">
           <SkillItem>
             <template #icon><IconVue /> </template>
             <template #name>Vue</template>
-            <template #details>My most used framework</template>
+            <template #details>My most used framework.</template>
           </SkillItem>
           <SkillItem>
             <template #icon><IconReact /> </template>
             <template #name>React</template>
-            <template #details>I used this most during school</template>
+            <template #details>I used this most during school.</template>
           </SkillItem>
           <SkillItem>
             <template #icon><IconFlutter class="fill-[#54c5f8]" /> </template>
             <template #name>Flutter</template>
-            <template #details>This was with dart to create an app</template>
+            <template #details>This was with dart to create an app.</template>
           </SkillItem>
         </ul>
       </li>
       <li>
         <H2WithSubText>
           <template #heading>Languages</template>
-          <template #subText>Languages I'm familiar with</template>
+          <template #subText>Languages I'm familiar with.</template>
         </H2WithSubText>
         <ul class="flex flex-wrap py-5">
           <SkillItem>
@@ -110,7 +116,7 @@ import H2WithSubText from '@/components/H2WithSubText.vue'
               <IconBE />
             </template>
             <template #name>Dutch</template>
-            <template #details>My native language</template>
+            <template #details>My native language.</template>
           </SkillItem>
           <SkillItem>
             <template #icon>
@@ -118,7 +124,7 @@ import H2WithSubText from '@/components/H2WithSubText.vue'
             </template>
             <template #name>English</template>
             <template #details
-              >I speak english almost on a daily basis. my proficiency is really high</template
+              >I speak English almost on a daily basis. My proficiency is really high.</template
             >
           </SkillItem>
           <SkillItem>
@@ -127,14 +133,14 @@ import H2WithSubText from '@/components/H2WithSubText.vue'
               <IconBE />
             </template>
             <template #name>French</template>
-            <template #details>my french is not perfect but I can get my message across </template>
+            <template #details>My French is not perfect but I can get my message across. </template>
           </SkillItem>
           <SkillItem>
             <template #icon>
               <IconPT />
             </template>
             <template #name>Portuguese</template>
-            <template #details>I'm learning Portuguese </template>
+            <template #details>I'm learning Portuguese. </template>
           </SkillItem>
         </ul>
       </li>
@@ -149,7 +155,7 @@ import H2WithSubText from '@/components/H2WithSubText.vue'
               <img src="@/assets/seal-csm.png" alt="seal of csm" />
             </template>
             <template #name>Certified Scrum Master</template>
-            <template #details>I have earned this certificat on 2023-06-27</template>
+            <template #details>I have earned this certificat on 2023-06-27.</template>
           </SkillItem>
         </ul>
       </li>
