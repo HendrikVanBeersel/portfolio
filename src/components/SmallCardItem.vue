@@ -1,5 +1,7 @@
 <template>
-  <li class="flex flex-row border border-tertiary py-2 px-1 m-2 w-44 xl:w-48 rounded-2xl">
+  <li
+    class="flex flex-row border border-tertiary py-2 px-1 m-2 w-[45%] sm:w-60 lg:w-48 rounded-2xl"
+  >
     <div class="basis-1/4 flex flex-col justify-center">
       <slot name="icon"></slot>
     </div>

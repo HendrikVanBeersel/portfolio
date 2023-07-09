@@ -60,7 +60,7 @@ watch(buttonIsDisabled, (newValue) => {
 })
 </script>
 <template>
-  <main class="w-full p-10 flex flex-col">
+  <main class="w-full p-10 sm:p-16 md:p-20 flex flex-col">
     <label>Name:</label>
     <input class="text-black" type="text" v-model="name" name="user_name" />
     <label class="mt-4">Email:</label>
