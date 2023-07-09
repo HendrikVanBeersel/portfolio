@@ -35,32 +35,51 @@ const headerFlexDirection = computed(() => {
 </script>
 
 <template>
-  <div class="flex min-h-screen" :class="mainFlexDirection">
-    <header class="p-8 basis-1/2 flex justify-center" :class="headerFlexDirection">
+  <div class="flex flex-col min-h-screen" :class="'xl:' + mainFlexDirection">
+    <header
+      class="xl:p-8 basis-1/2 flex flex-col justify-center"
+      :class="'xl:' + headerFlexDirection"
+    >
       <img
         alt="Vue logo"
         class="p-2 self-center"
-        :class="headerFlexDirection === 'flex-col' ? 'h-80 w-80' : 'h-14 w-14'"
+        :class="
+          currentRoute === 'home'
+            ? 'h-80 w-80'
+            : 'h-14 w-14' + ' xl:' + headerFlexDirection === 'flex-col'
+            ? 'h-80 w-80'
+            : 'h-14 w-14'
+        "
         src="@/assets/logo.svg"
       />
 
       <h1
-        class="p-2 self-center"
-        :class="headerFlexDirection === 'flex-col' ? 'text-5xl' : 'text-4xl'"
+        class="p-2 self-center text-3xl"
+        :class="'xl:' + headerFlexDirection === 'flex-col' ? 'text-5xl' : 'text-4xl'"
       >
         Hendrik Van Beersel
       </h1>
 
-      <nav
-        class="flex flex-row justify-center py-2 text-xl divide-x-4 divide-secundary border-y-4 border-tertiary"
-      >
-        <RouterLink class="px-2" to="/">Home</RouterLink>
-        <RouterLink class="px-2" to="/skills">Skills</RouterLink>
-        <RouterLink class="px-2" to="/experience">Experience</RouterLink>
-        <RouterLink class="px-2" to="/projects">Projects</RouterLink>
-        <RouterLink class="px-2" to="/education">Education</RouterLink>
-        <RouterLink class="px-2" to="/aboutMe">About Me</RouterLink>
-        <RouterLink class="px-2" to="/contact">Contact</RouterLink>
+      <nav class="flex flex-wrap justify-center p-2 text-xl border-4 rounded-xl border-tertiary">
+        <RouterLink class="px-2 border-4 border-secundary rounded-lg" to="/">Home</RouterLink>
+        <RouterLink class="px-2 border-4 border-secundary rounded-lg" to="/skills"
+          >Skills</RouterLink
+        >
+        <RouterLink class="px-2 border-4 border-secundary rounded-lg" to="/experience"
+          >Experience</RouterLink
+        >
+        <RouterLink class="px-2 border-4 border-secundary rounded-lg" to="/projects"
+          >Projects</RouterLink
+        >
+        <RouterLink class="px-2 border-4 border-secundary rounded-lg" to="/education"
+          >Education</RouterLink
+        >
+        <RouterLink class="px-2 border-4 border-secundary rounded-lg" to="/aboutMe"
+          >About Me</RouterLink
+        >
+        <RouterLink class="px-2 border-4 border-secundary rounded-lg" to="/contact"
+          >Contact</RouterLink
+        >
       </nav>
     </header>
 

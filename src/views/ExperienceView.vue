@@ -3,7 +3,7 @@ import ExperienceItem from '@/components/LineItem.vue'
 </script>
 <template>
   <main>
-    <ExperienceItem routerLinkName="">
+    <ExperienceItem class="mt-10" routerLinkName="">
       <template #icon> <p class="p-2 w-24">2022-2023</p> </template>
       <template #heading
         >Internship with <a href="https://but.digital/be-en/">BUT digital</a>
