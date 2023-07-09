@@ -3,6 +3,8 @@ import IconBike from '@/components/icons/IconBike.vue'
 import IconCards from '@/components/icons/IconCards.vue'
 import IconSourceBranch from '@/components/icons/IconSourceBranch.vue'
 import IconSwim from '@/components/icons/IconSwim.vue'
+      //anyway  anyhow instead off but
+
 </script>
 <template>
   <main class="m-8 text-lg lg:w-10/12 xl:w-8/12 2xl:w-7/12">
