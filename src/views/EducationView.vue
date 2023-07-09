@@ -5,7 +5,7 @@ import EducationItem from '@/components/LineItem.vue'
   <main>
     <EducationItem class="mt-10" routerLinkName="">
       <template #icon> <p class="p-2">2023</p> </template>
-      <template #heading>Graduate Programing (Cum Laude)</template>
+      <template #heading>Graduate Programming (Cum Laude)</template>
       <template #text class="">
         <p>
           I graduated with a cum laude distinction. I learned a lot about programming and the scrum

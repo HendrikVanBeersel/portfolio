@@ -18,7 +18,7 @@ import IconPerson from '@/components/icons/IconPerson.vue'
       <template #text class=""
         >I am a knowledgeable full-stack developer with experience in a wide variety of programming
         languages. I am highly motivated and always eager to learn more. Furthermore, I have
-        developed a higher understanding behind the scrum process and effective communication.
+        developed a keen understanding behind the scrum process and effective communication.
       </template>
     </HomeItem>
     <HomeItem routerLinkName="experience">
@@ -70,9 +70,9 @@ import IconPerson from '@/components/icons/IconPerson.vue'
       </template>
       <template #heading>About Me</template>
       <template #text
-        >I am a social and versatile person. because of this I do enjoy working at a social company
-        but I also like to encourage communication from others. In my free time I love to go biking
-        meeting with friends or even making my own programs</template
+        >I am a social and versatile person. Hence I enjoy working in teams/a social workplace. I
+        communicate well in a team-environment and encourage communication from my colleagues. In my
+        free time I love to go biking, meeting up with friends and making my own programs.</template
       >
     </HomeItem>
   </main>
