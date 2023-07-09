@@ -2,6 +2,7 @@ this is the code behind my portfolio.
 
 #todo
 
+
 - [x] get intresting design that matches me
 - [x] Home
 - [x] skills
