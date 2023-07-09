@@ -1,9 +1,9 @@
 this is the code behind my portfolio.
 
 #todo
-[x]email
+[x]email  
 
-- []fix bug that sometimes happens
+- [ ]fix bug that sometimes happens
 
-[]project connected with api github
-[]translation button's
+[ ]project connected with api github
+[ ]translation button's
