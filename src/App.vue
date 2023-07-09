@@ -58,24 +58,42 @@ const headerFlexDirection = computed(() => {
         Hendrik Van Beersel
       </h1>
 
-      <nav class="flex flex-wrap justify-center rounded-xl border-4 border-tertiary p-2 text-xl">
-        <RouterLink class="rounded-lg border-4 border-secundary px-2" to="/">Home</RouterLink>
-        <RouterLink class="rounded-lg border-4 border-secundary px-2" to="/skills"
+      <nav
+        class="flex flex-wrap justify-center rounded-xl border-4 border-tertiary p-2 text-xl md:flex-row"
+      >
+        <RouterLink
+          class="rounded-lg border-4 border-secundary px-2 md:rounded-none md:border-y-0"
+          to="/"
+          >Home</RouterLink
+        >
+        <RouterLink
+          class="rounded-lg border-4 border-secundary px-2 md:rounded-none md:border-y-0"
+          to="/skills"
           >Skills</RouterLink
         >
-        <RouterLink class="rounded-lg border-4 border-secundary px-2" to="/experience"
+        <RouterLink
+          class="rounded-lg border-4 border-secundary px-2 md:rounded-none md:border-y-0"
+          to="/experience"
           >Experience</RouterLink
         >
-        <RouterLink class="rounded-lg border-4 border-secundary px-2" to="/projects"
+        <RouterLink
+          class="rounded-lg border-4 border-secundary px-2 md:rounded-none md:border-y-0"
+          to="/projects"
           >Projects</RouterLink
         >
-        <RouterLink class="rounded-lg border-4 border-secundary px-2" to="/education"
+        <RouterLink
+          class="rounded-lg border-4 border-secundary px-2 md:rounded-none md:border-y-0"
+          to="/education"
           >Education</RouterLink
         >
-        <RouterLink class="rounded-lg border-4 border-secundary px-2" to="/aboutMe"
+        <RouterLink
+          class="rounded-lg border-4 border-secundary px-2 md:rounded-none md:border-y-0"
+          to="/aboutMe"
           >About Me</RouterLink
         >
-        <RouterLink class="rounded-lg border-4 border-secundary px-2" to="/contact"
+        <RouterLink
+          class="rounded-lg border-4 border-secundary px-2 md:rounded-none md:border-y-0"
+          to="/contact"
           >Contact</RouterLink
         >
       </nav>
