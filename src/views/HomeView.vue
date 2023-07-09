@@ -18,11 +18,13 @@ import IconPerson from '@/components/icons/IconPerson.vue'
       <template #text class=""
         >I am a knowledgeable full-stack developer with experience in a wide variety of programming
         languages. I am highly motivated and always eager to learn more. Furthermore, I have
-        devoloped a higher understanding behind the scrum process and effective communication.
+        developed a higher understanding behind the scrum process and effective communication.
       </template>
     </HomeItem>
     <HomeItem routerLinkName="experience">
-      <template #icon> <IconWorkExperience class="fill-primary p-2 sm:p-3" /> </template>
+      <template #icon>
+        <IconWorkExperience class="fill-primary p-2 sm:p-3 lg:p-2 xl:p-3" />
+      </template>
       <template #heading>Experience</template>
 
       <template #text
@@ -33,7 +35,7 @@ import IconPerson from '@/components/icons/IconPerson.vue'
     </HomeItem>
     <HomeItem routerLinkName="projects">
       <template #icon>
-        <IconProject class="stroke-primary fill-slate-950 p-1 sm:p-2 stroke-2" />
+        <IconProject class="fill-slate-950 stroke-primary stroke-2 p-1 sm:p-2" />
       </template>
       <template #heading>Projects</template>
       <template #text
@@ -52,7 +54,7 @@ import IconPerson from '@/components/icons/IconPerson.vue'
 
     <HomeItem routerLinkName="education">
       <template #icon
-        ><IconEducation class="stroke-primary fill-slate-950 sm:p-1 xl:p-2 stroke-2"
+        ><IconEducation class="fill-slate-950 stroke-primary stroke-2 sm:p-1 xl:p-2"
       /></template>
       <template #heading>Education</template>
       <template #text
@@ -69,8 +71,8 @@ import IconPerson from '@/components/icons/IconPerson.vue'
       <template #heading>About Me</template>
       <template #text
         >I am a social and versatile person. because of this I do enjoy working at a social company
-        but I also don't mind encouraging communication from others. In my free time I love to go
-        biking meeting with friends or even making my own programs</template
+        but I also like to encourage communication from others. In my free time I love to go biking
+        meeting with friends or even making my own programs</template
       >
     </HomeItem>
   </main>
