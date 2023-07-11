@@ -42,13 +42,13 @@ const headerFlexDirection = computed(() => {
     >
       <img
         alt="Vue logo"
-        class="lg ml-4 self-center p-2"
+        class="lg ml-4 self-center p-2 border-2 border-tertiary rounded-full"
         :class="
           (currentRoute === 'home' ? 'h-80 w-80 ' : 'h-14 w-14') +
           ' ' +
           (headerFlexDirection === 'flex-col' ? 'lg:h-80 lg:w-80' : 'lg:h-14 lg:w-14')
         "
-        src="@/assets/logo.svg"
+        src="@/assets/profile/profiel_2.jpg"
       />
 
       <h1
