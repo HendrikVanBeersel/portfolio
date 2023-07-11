@@ -10,8 +10,8 @@ import H2WithSubText from '@/components/H2WithSubText.vue'
           <template #subText></template>
         </H2WithSubText>
         <p class="m-1">
-          the first project at my internship was to make a showpad project with a colleague. this
-          was my first project using Vue,vite,pinia and showpad. I can sadly not show the code right
+          The first project at my internship was to make a showpad project with a colleague. This
+          was my first project using Vue,Vite,Pinia and Showpad. I can sadly not show the code right
           now because it is not in my possesion .
         </p>
       </li>
@@ -41,9 +41,9 @@ import H2WithSubText from '@/components/H2WithSubText.vue'
           <template #subText> </template>
         </H2WithSubText>
         <p class="m-1">
-          We where assigned to make a timesheet. this needed to provide the information that
-          everybody filled in their hours. mainly for cross country hours. This was also to make
-          sure that all hours that needed to be billed t custommers where billed.
+          We where assigned to make a timesheet. This needed to provide the information that
+          everybody filled in their hours. Mainly for cross country hours. This was also to make
+          sure that all hours that needed to be billed to custommers where billed.
         </p>
       </li>
 
@@ -53,8 +53,8 @@ import H2WithSubText from '@/components/H2WithSubText.vue'
           <template #subText></template>
         </H2WithSubText>
         <p class="m-1">
-          This was the last project we needed to make. the goal was to create a program that
-          backed-up the appsdb of showpad
+          This was the last project we needed to make. The goal was to create a program that
+          backed-up the Appsdb of Showpad
         </p>
       </li>
 
@@ -63,7 +63,10 @@ import H2WithSubText from '@/components/H2WithSubText.vue'
           <template #heading>My Portfolio</template>
           <template #subText></template>
         </H2WithSubText>
-        <p>This is my portfolio where i show my skills and projects.</p>
+        <p>
+          This is my portfolio where I show my skills and projects. Made with Vue,Vite and Tailwind.
+          I use Azure for the deployment
+        </p>
       </li>
     </ul>
   </main>
