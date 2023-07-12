@@ -24,7 +24,7 @@ const gitHubStore = useGitHubStore()
           <template #subText></template>
         </H2WithSubText>
         <p class="m-5">
-          This is an aplication for me and my friends where we keep wich special beers we drank and
+          This is an application for me and my friends where we keep which special beers we drank and
           wich we like the most. This was a school project. The aplication was made using
           react-native
         </p>
@@ -41,7 +41,7 @@ const gitHubStore = useGitHubStore()
           <template #subText></template>
         </H2WithSubText>
         <p class="m-5">
-          This a flutter projects to keep track of your plants. This was a school project.
+          This is a flutter projects that keeps track of your plants. This was a school project.
         </p>
         <p class="m-5 text-xs md:text-base">
           GitHub:
@@ -56,9 +56,9 @@ const gitHubStore = useGitHubStore()
           <template #subText> </template>
         </H2WithSubText>
         <p class="m-5">
-          We where assigned to make a timesheet. This needed to provide the information that
+          We were assigned to make a timesheet. This needed to provide the information that
           everybody filled in their hours. Mainly for cross country hours. This was also to make
-          sure that all hours that needed to be billed to custommers where billed.
+          sure that all hours that needed to be billed to customers where billed.
         </p>
       </li>
 
