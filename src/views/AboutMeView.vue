@@ -25,10 +25,10 @@ import IconSwim from '@/components/icons/IconSwim.vue'
       <li>
         <p>
           In my free time I enjoy spending time with friends, going out, visiting places etc.
-          Playing boardgames, especially ones where you can try new tactics and change it up every
-          time, is one of my favorite 'rainy day' pastimes.
+          Playing boardgames, especially the ones where you can try new tactics and change it up every
+          time, this is one of my favorite 'rainy day' pastimes.
           <IconCards class="float-left h-20 w-20 fill-primary" />
-          I don't need to win to have a good time (although I won't pass up to chance to win of
+          I don't need to win to have a good time (although I won't pass up the chance to win of
           course) but I really enjoy to see ways of play that are interesting and different.
         </p>
       </li>
