@@ -24,7 +24,7 @@ const gitHubStore = useGitHubStore()
           <template #subText></template>
         </H2WithSubText>
         <p class="m-5">
-          This is an aplication for me and my friends where we keep wich special beers we drank and
+          This is an application for me and my friends where we keep wich special beers we drank and
           wich we like the most. This was a school project. The aplication was made using
           react-native
         </p>
