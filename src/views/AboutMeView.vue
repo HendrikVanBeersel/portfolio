@@ -38,11 +38,9 @@ import IconSwim from '@/components/icons/IconSwim.vue'
           Programming and learning new technologies has a way of finding me in my free time as well.
           I am currently trying to work with azure, making my own api, creating a place to connect
           safely to a home server and I would like to see what it all has to offer. If you want to
-          learn more about my individual projects, you can find more information at the .<button
-            class="inline-block underline"
-            @click="$router.push({ name: 'projects' })"
-          >
-            'projects tab'</button
+          learn more about my individual projects, you can find more information at
+          <button class="inline-block underline" @click="$router.push({ name: 'projects' })">
+            'projects'</button
           >.
         </p>
       </li>
