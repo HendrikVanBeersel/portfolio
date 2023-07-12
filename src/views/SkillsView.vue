@@ -77,7 +77,7 @@ import IconPHP from '@/components/icons/programming/IconPHP.vue'
           <SkillItem>
             <template #icon><IconPHP /> </template>
             <template #name>PHP</template>
-            <template #details>I Have a basic understanding of PHP.</template>
+            <template #details>I have a basic understanding of PHP.</template>
           </SkillItem>
         </ul>
       </li>
@@ -155,7 +155,7 @@ import IconPHP from '@/components/icons/programming/IconPHP.vue'
               <img src="@/assets/seal-csm.png" alt="seal of csm" />
             </template>
             <template #name>Certified Scrum Master</template>
-            <template #details>I have earned this certificat on 2023-06-27.</template>
+            <template #details>I have earned this certificate on 2023-06-27.</template>
           </SkillItem>
         </ul>
       </li>
