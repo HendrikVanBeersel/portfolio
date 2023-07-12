@@ -12,6 +12,7 @@ export default defineConfig({
       manifest: {
         name: 'Portfolio Hendrik Van Beersel',
         short_name: 'Portfolio HVB',
+        description: 'My personal portfolio to show my skills and projects',
         theme_color: '#024b30',
         icons: [
           {
@@ -24,6 +25,22 @@ export default defineConfig({
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any maskable'
+          }
+        ]
+      },
+      workbox: {
+        runtimeCaching: [
+          {
+            urlPattern: ({ url }) => {
+              return url.pathname.startsWith('/api')
+            },
+            handler: 'CacheFirst' as const,
+            options: {
+              cacheName: 'api-cache',
+              cacheableResponse: {
+                statuses: [0, 200]
+              }
+            }
           }
         ]
       }
