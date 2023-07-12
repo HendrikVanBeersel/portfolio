@@ -8,7 +8,7 @@ import EducationItem from '@/components/LineItem.vue'
       <template #heading>Graduate Programming (Cum Laude)</template>
       <template #text class="">
         <p>
-          I graduated with a cum laude distinction. I learned a lot about programming and the scrum
+          I graduated with the distinction of cum laude. I learned a lot about programming and the Scrum
           process. I also learned how to work in a team and how to communicate effectively.
         </p>
       </template>
@@ -22,7 +22,7 @@ import EducationItem from '@/components/LineItem.vue'
         </p>
       </template>
 
-      <template #text class=""> I took a scrum master course in june 2023. </template>
+      <template #text class=""> I took a Scrum Master course in june 2023. </template>
     </EducationItem>
   </main>
 </template>

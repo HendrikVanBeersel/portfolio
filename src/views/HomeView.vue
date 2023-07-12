@@ -20,7 +20,7 @@ const gitHubStore = useGitHubStore()
       <template #text class=""
         >I am a knowledgeable full-stack developer with experience in a wide variety of programming
         languages. I am highly motivated and always eager to learn more. Furthermore, I have
-        developed a keen understanding behind the scrum process and effective communication.
+        developed a keen understanding behind the Scrum process and effective communication.
       </template>
     </HomeItem>
     <HomeItem routerLinkName="experience">
@@ -74,7 +74,7 @@ const gitHubStore = useGitHubStore()
       <template #text
         >I am a social and versatile person. Hence I enjoy working in teams/a social workplace. I
         communicate well in a team-environment and encourage communication from my colleagues. In my
-        free time I love to go biking, meeting up with friends and making my own programs.</template
+        spare time I love to go biking, meeting up with friends and making my own programs.</template
       >
     </HomeItem>
   </main>
