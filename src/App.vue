@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { RouterLink, RouterView, useRoute } from 'vue-router'
+import { useGitHubStore } from '@/stores/gitHubStore'
+
+const gitHubStore = useGitHubStore()
+gitHubStore.fetchGitHubInfo()
 
 const currentRoute = ref<string>('home')
 watch(useRoute(), (to, from) => {
@@ -42,7 +46,7 @@ const headerFlexDirection = computed(() => {
     >
       <img
         alt="Vue logo"
-        class="lg ml-4 self-center p-2 border-2 border-tertiary rounded-full"
+        class="lg ml-4 self-center rounded-full border-2 border-tertiary p-2"
         :class="
           (currentRoute === 'home' ? 'h-80 w-80 ' : 'h-14 w-14') +
           ' ' +
