@@ -15,7 +15,7 @@ const gitHubStore = useGitHubStore()
         <p class="m-5">
           The first project at my internship was to make a showpad project with a colleague. This
           was my first project using Vue,Vite,Pinia and Showpad. I can sadly not show the code right
-          now because it is not in my possesion .
+          now, because of internal information.
         </p>
       </li>
       <li>
@@ -25,8 +25,7 @@ const gitHubStore = useGitHubStore()
         </H2WithSubText>
         <p class="m-5">
           This is an application for me and my friends where we keep which special beers we drank and
-          wich we like the most. This was a school project. The aplication was made using
-          react-native
+          which we like the most. This was a school project made with React-Native.
         </p>
         <p class="m-5 text-xs md:text-base">
           GitHub:
@@ -41,7 +40,7 @@ const gitHubStore = useGitHubStore()
           <template #subText></template>
         </H2WithSubText>
         <p class="m-5">
-          This is a flutter projects that keeps track of your plants. This was a school project.
+          This is a Flutter project that keeps track of your plants. This was a school project.
         </p>
         <p class="m-5 text-xs md:text-base">
           GitHub:
@@ -58,7 +57,7 @@ const gitHubStore = useGitHubStore()
         <p class="m-5">
           We were assigned to make a timesheet. This needed to provide the information that
           everybody filled in their hours. Mainly for cross country hours. This was also to make
-          sure that all hours that needed to be billed to customers where billed.
+          sure that all hours that needed to be billed to customers were billed.
         </p>
       </li>
 
