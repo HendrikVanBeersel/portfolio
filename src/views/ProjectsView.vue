@@ -28,9 +28,9 @@ const gitHubStore = useGitHubStore()
           wich we like the most. This was a school project. The aplication was made using
           react-native
         </p>
-        <p class="m-5">
+        <p class="m-5 text-xs md:text-base">
           GitHub:
-          <a class="display: inline" :href="gitHubStore.untappedRepo.html_url">{{
+          <a class="display: inline underline" :href="gitHubStore.untappedRepo.html_url">{{
             gitHubStore.untappedRepo.html_url
           }}</a>
         </p>
@@ -43,9 +43,9 @@ const gitHubStore = useGitHubStore()
         <p class="m-5">
           This a flutter projects to keep track of your plants. This was a school project.
         </p>
-        <p class="m-5">
+        <p class="m-5 text-xs md:text-base">
           GitHub:
-          <a class="display: inline" :href="gitHubStore.plantManagerRepo.html_url">{{
+          <a class="display: inline underline" :href="gitHubStore.plantManagerRepo.html_url">{{
             gitHubStore.plantManagerRepo.html_url
           }}</a>
         </p>
@@ -82,9 +82,9 @@ const gitHubStore = useGitHubStore()
           This is my portfolio where I show my skills and projects. Made with Vue,Vite and Tailwind.
           I use Azure for the deployment
         </p>
-        <p class="m-5">
+        <p class="m-5 text-xs md:text-base">
           GitHub:
-          <a class="display: inline" :href="gitHubStore.portfolioRepo.html_url">{{
+          <a class="display: inline underline" :href="gitHubStore.portfolioRepo.html_url">{{
             gitHubStore.portfolioRepo.html_url
           }}</a>
         </p>
