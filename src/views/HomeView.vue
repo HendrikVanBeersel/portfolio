@@ -5,6 +5,8 @@ import IconProject from '@/components/icons/IconProject.vue'
 import HomeItem from '../components/LineItem.vue'
 import IconEducation from '@/components/icons/IconEducation.vue'
 import IconPerson from '@/components/icons/IconPerson.vue'
+import { useGitHubStore } from '@/stores/gitHubStore'
+const gitHubStore = useGitHubStore()
 </script>
 
 <template>
@@ -45,7 +47,7 @@ import IconPerson from '@/components/icons/IconPerson.vue'
           <a
             href="https://github.com/HendrikVanBeersel/portfolio"
             class="underline decoration-white"
-            >github.com/HendrikVanBeersel/portfolio</a
+            >{{ gitHubStore.portfolioRepo.html_url }}</a
           >
         </p>
         <a href="" class="underline decoration-white">Projects at BUT</a>
