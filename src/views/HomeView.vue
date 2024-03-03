@@ -30,7 +30,11 @@ const gitHubStore = useGitHubStore()
       <template #heading>Experience</template>
 
       <template #text
-        >2022-2023:<br />
+        >oktober 2023-now:<br />
+        &emsp;Junior Consultant at
+        <a href="https://aexis.com/" class="underline decoration-white">AEXIS</a>
+        <br />
+        2022-2023:<br />
         &emsp;Internship with
         <a href="https://but.digital/be-en/" class="underline decoration-white">BUT digital</a>
       </template>
@@ -74,7 +78,8 @@ const gitHubStore = useGitHubStore()
       <template #text
         >I am a social and versatile person. Hence I enjoy working in teams/a social workplace. I
         communicate well in a team-environment and encourage communication from my colleagues. In my
-        spare time I love to go biking, meeting up with friends and making my own programs.</template
+        spare time I love to go biking, meeting up with friends and making my own
+        programs.</template
       >
     </HomeItem>
   </main>
