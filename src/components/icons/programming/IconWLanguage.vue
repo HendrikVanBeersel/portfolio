@@ -1,3 +1,3 @@
 <template>
-  <img src="@/assets/logo's/logoWLanguage.png" />
+  <img src="@/assets/logo/logoWLanguage.png" />
 </template>

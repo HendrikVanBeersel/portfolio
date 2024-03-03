@@ -1,3 +1,3 @@
 <template>
-  <img src="@/assets/logo's/logoHFSQL.png" />
+  <img src="@/assets/logo/logoHFSQL.png" />
 </template>
