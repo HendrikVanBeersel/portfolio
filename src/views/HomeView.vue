@@ -51,10 +51,10 @@ const gitHubStore = useGitHubStore()
           <a
             href="https://github.com/HendrikVanBeersel/portfolio"
             class="underline decoration-white"
-            >{{ gitHubStore.portfolioRepo.html_url }}</a
+            >HendrikVanBeersel/portfolio</a
           >
         </p>
-        <a href="" class="underline decoration-white">Projects at BUT</a>
+        <a href="" class="decoration-white">Projects at BUT</a>
       </template>
     </HomeItem>
 
