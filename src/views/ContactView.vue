@@ -20,7 +20,7 @@ async function SendEmail() {
       modal.value = true
     } else {
       console.log('fail')
-      modaltext.value = 'Service is currently not working\nPlease contact me with linkedin'
+      modaltext.value = 'Service is currently not working!\nPlease contact me with linkedin'
       modal.value = true
     }
   })
