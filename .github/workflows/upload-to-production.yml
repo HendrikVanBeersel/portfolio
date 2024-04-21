@@ -13,20 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 16
-
-      - name: install dependencies
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
-      - name: Run tests
-        run: echo "needs to be implemented"
-
       - name: Deploy to VPS
         uses: appleboy/ssh-action@master
         with:
@@ -40,4 +26,4 @@ jobs:
             npm ci
             npm run build
             docker build -t portfolio-hendrik .
-            docker run --name portfolio-hendrik --rm -d -p 8080:443 portfolio-hendrik
+            docker run --name portfolio-hendrik --rm -d -p 443:8080 portfolio-hendrik
