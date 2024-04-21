@@ -40,6 +40,6 @@ jobs:
             npm ci
             npm run build
             docker build -t portfolio-hendrik .
-            docker run -it -p 443:443
+            docker run --name portfolio-hendrik --rm -it -p 443:443 -p 80:80 portfolio-hendrik
       
   
