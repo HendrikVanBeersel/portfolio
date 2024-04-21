@@ -36,7 +36,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script_stop: true
           script: |
-            cd /portfolio/Hendrik_Van_Beersel/CV
+            cd /portfolio/Hendrik_Van_Beersel/CV/portfolio
             git pull origin main
             npm ci
             npm run build
