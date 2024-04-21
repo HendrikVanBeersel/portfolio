@@ -23,7 +23,7 @@ jobs:
 
       - name: Build
         run: npm run build
-        
+
       - name: Run tests
         run: echo "needs to be implemented"
 
@@ -40,6 +40,4 @@ jobs:
             npm ci
             npm run build
             docker build -t portfolio-hendrik .
-            docker run --name portfolio-hendrik --rm -p 443:443 -p 80:80 portfolio-hendrik
-      
-  
+            docker run --name portfolio-hendrik --rm -d -p 443:443 -p 80:80 portfolio-hendrik
