@@ -39,5 +39,6 @@ jobs:
             git pull origin main
             npm ci
             npm run build
+            docker build -t portfolio-hendrik && docker run -it portfolio-hendrik
       
   
