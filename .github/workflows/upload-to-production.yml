@@ -1,0 +1,43 @@
+name: upload to production
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 16
+
+      - name: install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+        
+      - name: Run tests
+        run: echo "needs to be implemented"
+
+      - name: Deploy to VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secret.VPS_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{screts.SSH_PORT }}
+          script: |
+            cd /portfolio/Hendrik_Van_Beersel/CV
+            git pull origin main
+            npm ci
+            npm run build
+      
+  
