@@ -39,6 +39,7 @@ jobs:
             git pull origin main
             npm ci
             npm run build
-            docker build -t portfolio-hendrik . && docker run -it portfolio-hendrik -p 443:443
+            docker build -t portfolio-hendrik .
+            docker run -it -p 443:443
       
   
