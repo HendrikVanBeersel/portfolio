@@ -26,4 +26,9 @@ jobs:
             npm ci
             npm run build
             docker build -t portfolio-hendrik .
-            docker run --name portfolio-hendrik --rm -d -p 443:8080 portfolio-hendrik
+            docker run --rm -d \
+            --name portfolio-hendrik \
+            -p 443:433 \
+            -v /opt/certificates:/portfolio/Hendrik_Van_Beersel/CV/cert \
+            -v /opt/nginx.conf:/portfolio/Hendrik_Van_Beersel/CV/nginx.conf \
+            portfolio-hendrik

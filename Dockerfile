@@ -1,6 +1,5 @@
-FROM node:18-alpine
-WORKDIR /app
-COPY ./dist .
+FROM nginx:alpine
 
-EXPOSE 8080
-CMD [ "npm", "run", "preview" ]
+COPY ./dist /usr/share/nginx/html
+
+EXPOSE 443
