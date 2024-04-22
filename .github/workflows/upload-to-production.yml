@@ -25,5 +25,7 @@ jobs:
             git pull origin main
             npm ci
             npm run build
+            docker stop portfolio-hendrik
+            docker rm portfolio-hendrik
             docker build -t portfolio-hendrik .
             docker run --rm -d --name portfolio-hendrik -p 443:443 portfolio-hendrik
