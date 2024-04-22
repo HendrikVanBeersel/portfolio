@@ -52,19 +52,5 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  },
-  preview: {
-    port: 8080,
-    strictPort: true
-  },
-  server: {
-    port: 8080,
-    strictPort: true,
-    https: {
-      key: fs.readFileSync(path.resolve(__dirname, 'cert/key.pem')),
-      cert: fs.readFileSync(path.resolve(__dirname, 'cert/cert.pem'))
-    },
-    host: true,
-    origin: 'https://0.0.0.0:8080'
   }
 })
