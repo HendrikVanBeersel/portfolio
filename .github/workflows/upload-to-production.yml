@@ -28,4 +28,7 @@ jobs:
             docker stop portfolio-hendrik
             docker rm portfolio-hendrik
             docker build -t portfolio-hendrik .
-            docker run --rm -d --name portfolio-hendrik -p 443:443 -v /portfolio/Hendrik_Van_Beersel/CV/nginx.conf:/etc/nginx/nginx.conf portfolio-hendrik
+            docker run --rm -d --name portfolio-hendrik -p 443:443 \
+            -v /portfolio/Hendrik_Van_Beersel/CV/nginx.conf:/etc/nginx/nginx.conf \
+            -v /portfolio/Hendrik_Van_Beersel/CV/cert:/opt/certificates \
+            portfolio-hendrik
