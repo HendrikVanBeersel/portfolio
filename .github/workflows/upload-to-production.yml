@@ -41,5 +41,5 @@ jobs:
             cd /portfolio/Hendrik_Van_Beersel
             docker stop portfolio-hendrik
             docker rm portfolio-hendrik
-            docker build -t portfolio-hendrik
+            docker build -t portfolio-hendrik .
             docker run -d --network server-reverse-proxy-link --name portfolio-hendrik portfolio-hendrik
