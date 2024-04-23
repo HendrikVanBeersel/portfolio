@@ -13,22 +13,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: build
+        uses: actions/setup-node@v4
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: npm build
+
       - name: Deploy to VPS
-        uses: appleboy/ssh-action@master
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
-          script: |
-            cd /portfolio/Hendrik_Van_Beersel/CV/portfolio
-            git pull origin main
-            npm ci
-            npm run build
-            docker stop portfolio-hendrik
-            docker rm portfolio-hendrik
-            docker build -t portfolio-hendrik .
-            docker run --rm -d --name portfolio-hendrik -p 443:443 \
-            -v /portfolio/Hendrik_Van_Beersel/CV/nginx.conf:/etc/nginx/nginx.conf \
-            -v /portfolio/Hendrik_Van_Beersel/CV/cert:/opt/certificates \
-            portfolio-hendrik
+          source: "dist/*,Dockerfile"
+          target: "/portfolio/Hendrik_Van_Beersel"
