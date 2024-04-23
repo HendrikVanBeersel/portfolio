@@ -1,0 +1,45 @@
+name: upload to production
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: build
+        uses: actions/setup-node@v4
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: npm run build
+
+      - name: Deploy to VPS
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.SSH_PORT }}
+          source: 'dist/*,Dockerfile'
+          target: '/portfolio/dev/Hendrik_Van_Beersel'
+
+      - name: launching
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            cd /portfolio/dev/Hendrik_Van_Beersel
+            docker stop portfolio-hendrik-dev
+            docker rm portfolio-hendrik-dev
+            docker build -t portfolio-hendrik-dev
+            docker run -d --network server-reverse-proxy-link --name portfolio-hendrik-dev portfolio-hendrik-dev
