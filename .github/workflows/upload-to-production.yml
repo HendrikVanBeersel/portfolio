@@ -17,8 +17,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 16
-        run: npm ci
-        run: npm run build
+      - run: npm ci
+      - run: npm run build
 
       - name: Deploy to VPS
         uses: appleboy/scp-action@master
