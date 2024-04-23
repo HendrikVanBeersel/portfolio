@@ -42,4 +42,4 @@ jobs:
             docker stop portfolio-hendrik
             docker rm portfolio-hendrik
             docker build -t portfolio-hendrik
-            docker run -d --name portfolio-hendrik portfolio-hendrik
+            docker run -d --network server-reverse-proxy-link --name portfolio-hendrik portfolio-hendrik
