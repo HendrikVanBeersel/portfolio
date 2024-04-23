@@ -40,5 +40,5 @@ jobs:
           script: |
             docker stop portfolio-hendrik
             docker rm portfolio-hendrik
-            docker build portfolio-hendrik
+            docker build -t portfolio-hendrik
             docker run -d portfolio-hendrik
