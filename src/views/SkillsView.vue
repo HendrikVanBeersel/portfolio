@@ -193,7 +193,7 @@ import IconHFSQL from '@/components/icons/programming/IconHFSQL.vue'
               <template #icon>
                 <img
                   class="p-1"
-                  src="src\assets\IBM Data Analyst.png"
+                  src="@/assets\IBM Data Analyst.png"
                   alt="ibm data analyst certificate paper"
                 />
               </template>
