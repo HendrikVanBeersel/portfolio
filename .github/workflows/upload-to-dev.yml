@@ -1,9 +1,9 @@
-name: upload to production
+name: upload to dev
 
 on:
   push:
     branches:
-      - main
+      - dev
 
 jobs:
   build-and-deploy:
@@ -27,8 +27,8 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
-          source: "dist/*,Dockerfile"
-          target: "/portfolio/Hendrik_Van_Beersel"
+          source: 'dist/*,Dockerfile'
+          target: '/portfolio/dev/Hendrik_Van_Beersel'
 
       - name: launching
         uses: appleboy/ssh-action@master
@@ -38,8 +38,8 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            cd /portfolio/Hendrik_Van_Beersel
-            docker stop portfolio-hendrik
-            docker rm portfolio-hendrik
-            docker build -t portfolio-hendrik .
-            docker run -d --network server-reverse-proxy-link --name portfolio-hendrik portfolio-hendrik
+            cd /portfolio/dev/Hendrik_Van_Beersel
+            docker stop portfolio-hendrik-dev
+            docker rm portfolio-hendrik-dev
+            docker build -t portfolio-hendrik-dev .
+            docker run -d --network server-reverse-proxy-link --name portfolio-hendrik-dev portfolio-hendrik-dev

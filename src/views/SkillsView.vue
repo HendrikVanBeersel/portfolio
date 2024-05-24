@@ -180,7 +180,7 @@ import IconHFSQL from '@/components/icons/programming/IconHFSQL.vue'
         <H2WithSubText>
           <template #heading>Varia</template>
         </H2WithSubText>
-        <ul>
+        <ul class="flex flex-wrap py-5">
           <SkillItem class="w-64">
             <template #icon>
               <img src="@/assets/seal-csm.png" alt="seal of csm" />
@@ -188,6 +188,21 @@ import IconHFSQL from '@/components/icons/programming/IconHFSQL.vue'
             <template #name>Certified Scrum Master</template>
             <template #details>I have earned this certificate on 2023-06-27.</template>
           </SkillItem>
+          <a href="https://coursera.org/share/a68b07d5dd0fff45b117fda7a0f2ea26">
+            <SkillItem class="w-64">
+              <template #icon>
+                <img
+                  class="p-1"
+                  src="@/assets/IBM-Data-Analyst.png"
+                  alt="ibm data analyst certificate paper"
+                />
+              </template>
+              <template #name>IBM Data Analyst</template>
+              <template #details
+                >I have earned this by doing a a wide range of data analyst courses.</template
+              >
+            </SkillItem>
+          </a>
         </ul>
       </li>
     </ul>
